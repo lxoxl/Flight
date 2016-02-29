@@ -1,5 +1,7 @@
 
 import math
+from decimal import Decimal
+
 h=0
 dh=1
 
@@ -46,6 +48,8 @@ while h<=86:
                 p = float(3.956420 * (214.65 / (214.65 - 2 * (h - 71))) (34.1632 / -2))
 
         h=h+dh
-        print("Height (km):",h,", Temp (K):",T,", Pressure (Pa):",p)
+        pDec = round(p,1)
+        TDec = round(T,1)
+        print("Height (km):",h,", Temp (K):",TDec,", Pressure (Pa):",pDec)
 
 
